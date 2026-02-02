@@ -10,7 +10,7 @@ def test_model_switching():
     """Test the model switching functionality."""
 
     # Base URL for the API
-    base_url = "http://localhost:8082"
+    base_url = "http://localhost:8089"
 
     print("Testing model switching functionality...")
 

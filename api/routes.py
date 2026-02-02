@@ -132,16 +132,6 @@ async def count_tokens(request_data: TokenCountRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@router.get("/")
-async def root(settings: Settings = Depends(get_settings)):
-    """Root endpoint."""
-    return {
-        "status": "ok",
-        "provider": "nvidia_nim",
-        "model": settings.model,
-    }
-
-
 @router.get("/health")
 async def health():
     """Health check endpoint."""

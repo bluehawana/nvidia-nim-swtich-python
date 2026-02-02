@@ -10,7 +10,7 @@ This project extends the cc-nim proxy with enhanced model switching capabilities
    - `POST /v1/models/switch` - Switch to a different model
 
 2. **Web Interface**:
-   - Accessible at `http://localhost:8082/`
+   - Accessible at `http://localhost:8089/`
    - Visual model selection interface
    - Search functionality for finding models
    - Real-time model switching with confirmation
@@ -27,24 +27,24 @@ This project extends the cc-nim proxy with enhanced model switching capabilities
 
 ### List Available Models
 ```bash
-curl http://localhost:8082/v1/models
+curl http://localhost:8089/v1/models
 ```
 
 ### Get Current Model
 ```bash
-curl http://localhost:8082/v1/models/current
+curl http://localhost:8089/v1/models/current
 ```
 
 ### Switch Models
 ```bash
-curl -X POST http://localhost:8082/v1/models/switch \
+curl -X POST http://localhost:8089/v1/models/switch \
   -H "Content-Type: application/json" \
   -d '{"model": "nvidia/llama-3.1-nemotron-70b-instruct"}'
 ```
 
 ## Web Interface
 
-Access the web interface at `http://localhost:8082/` to visually browse and switch between models.
+Access the web interface at `http://localhost:8089/` to visually browse and switch between models.
 
 ## Implementation Details
 

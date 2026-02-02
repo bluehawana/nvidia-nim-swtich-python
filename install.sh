@@ -69,7 +69,7 @@ CC_NVD_DIR="${HOME}/.cc-nvd-python"
 cd "${CC_NVD_DIR}"
 
 if [ "$1" == "serve" ]; then
-    uv run uvicorn server:app --host 0.0.0.0 --port 8082
+    uv run uvicorn server:app --host 0.0.0.0 --port 8089
 elif [ "$1" == "test" ]; then
     uv run pytest tests/
 else
@@ -85,4 +85,4 @@ echo "🚀 To start the server:"
 echo "   cc-nvd serve"
 echo ""
 echo "📖 Documentation: https://github.com/yourusername/cc-nvd-python"
-echo "🌍 Web interface: http://localhost:8082/"
+echo "🌍 Web interface: http://localhost:8089/"

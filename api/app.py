@@ -65,7 +65,7 @@ async def lifespan(app: FastAPI):
             allowed_dirs = [workspace] if settings.allowed_dir else []
             cli_manager = CLISessionManager(
                 workspace_path=workspace,
-                api_url="http://localhost:8082/v1",
+                api_url="http://localhost:8089/v1",
                 allowed_dirs=allowed_dirs,
                 max_sessions=settings.max_cli_sessions,
             )

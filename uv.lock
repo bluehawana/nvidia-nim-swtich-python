@@ -51,7 +51,7 @@ wheels = [
 ]
 
 [[package]]
-name = "cc-nvd"
+name = "cc-nvd-python"
 version = "1.0.0"
 source = { virtual = "." }
 dependencies = [
