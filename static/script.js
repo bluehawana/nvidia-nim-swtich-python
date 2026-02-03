@@ -370,7 +370,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             const data = await response.json();
-            const assistantMessage = data.content?.[0]?.text || 'No response';
+            
+            // Handle different response types (text or thinking)
+            let assistantMessage = 'No response';
+            if (data.content && data.content.length > 0) {
+                const content = data.content[0];
+                if (content.type === 'text') {
+                    assistantMessage = content.text;
+                } else if (content.type === 'thinking') {
+                    assistantMessage = content.thinking;
+                }
+            }
             
             addMessageToChat('assistant', assistantMessage);
             
