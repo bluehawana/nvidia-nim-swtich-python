@@ -1040,30 +1040,52 @@ echo "MY_FAVORITE_MODEL=nvidia/llama-3.1-nemotron-70b-instruct" >> .env.backup
 
 ## 🙏 Attribution & Inspiration
 
-This project was inspired by and built upon ideas from the AI proxy community.
+This project was inspired by and built upon ideas from the AI proxy community. We believe in giving credit where credit is due.
 
-### 🌟 Special Thanks
+### 🌟 How We Discovered This
 
-- **[@Gorden_Sun](https://twitter.com/Gorden_Sun)** - For sharing about NVIDIA's free API offerings
-- **[cc-nim](https://github.com/Alishahryar1/cc-nim)** by [@Alishahryar1](https://github.com/Alishahryar1) - Original concept for Claude Code + NVIDIA NIM integration
-- **NVIDIA Build Platform** - For providing free access to 180+ AI models
+**1. Discovery via X.com (Twitter)**
+- **[@Gorden_Sun](https://twitter.com/Gorden_Sun)** shared about NVIDIA's free API offerings and GLM-4-9B model
+- **Original X.com Post**: https://x.com/Gorden_Sun/status/1871808558591299801
+- This post introduced us to NVIDIA Build platform and free AI models
+
+**2. Learning from Community Projects**
+- **[cc-nim](https://github.com/Alishahryar1/cc-nim)** by [@Alishahryar1](https://github.com/Alishahryar1)
+- We learned the concept of Claude Code + NVIDIA NIM proxy integration from this project
+- Original repository: https://github.com/Alishahryar1/cc-nim
+
+**3. Building Upon the Foundation**
+- We studied the cc-nim project to understand the basic concept
+- Then we significantly enhanced and improved it with new features
+- This is an **independent enhancement project**, not a fork or copy
 
 ### ✨ What Makes This Project Different
 
-While inspired by existing projects, we've built something significantly enhanced:
+We learned from cc-nim and then significantly improved it. Here's what we added:
 
-| Feature | Original Projects | This Project |
-|---------|------------------|--------------|
-| Model Switching | Manual .env editing | Web UI + API (1-click) |
-| Context Preservation | Lost on switch | Maintained |
-| Visual Interface | None | Beautiful web dashboard |
-| Speed Indicators | No | Yes (⚡🚀🐢) |
-| Sorting & Filtering | No | Yes (by speed, size, provider) |
-| Cross-Folder Support | No | Yes (works anywhere) |
-| Production Ready | No | Yes (Docker, systemd, Nginx) |
-| Documentation | Basic | 15+ comprehensive guides |
-| Testing | None | 23 automated tests |
-| Windows Support | No | Yes (WSL2 guide) |
+| Feature | cc-nim (Original) | This Project (Enhanced) |
+|---------|------------------|------------------------|
+| Model Switching | Manual .env editing, restart required | Web UI + API, instant switching (<1s) |
+| Context Preservation | Lost on switch | Maintained across switches |
+| Visual Interface | None | Beautiful web dashboard with 180+ models |
+| Speed Indicators | No | Yes (⚡ Fast, � Medium, �🐢 Slow) |
+| Sorting & Filtering | No | Yes (by speed, size, provider, name) |
+| Cross-Folder Support | Must run from project folder | Works from any directory |
+| Production Ready | Development only | Docker, systemd, Nginx, SSL |
+| Documentation | Basic README | 15+ comprehensive guides |
+| Testing | None | 23 automated tests (all passing) |
+| Windows Support | No | Yes (complete WSL2 guide) |
+| Model Count | Limited | 180+ models with metadata |
+| API | Basic proxy | Full REST API for management |
+| Deployment | Manual | Automated scripts for VPS/cloud |
+
+**Key Improvements:**
+- ✅ **No more .env editing** - Switch models via web interface or API
+- ✅ **No context loss** - Keep your conversation when switching models
+- ✅ **Visual model browser** - See all models with speed ratings
+- ✅ **Production deployment** - Ready for real-world use
+- ✅ **Comprehensive docs** - Step-by-step guides for everything
+- ✅ **Windows support** - Works on Windows via WSL2
 
 **See [ATTRIBUTION.md](ATTRIBUTION.md) for complete details.**
 
@@ -1074,11 +1096,31 @@ While inspired by existing projects, we've built something significantly enhance
 ### Open Source & Non-Profit
 This is an **independent, open-source, free, non-profit project** created for **educational and research purposes** to help democratize access to AI technology.
 
+### Project Relationship
+- **Inspired by**: cc-nim project (https://github.com/Alishahryar1/cc-nim)
+- **Discovered via**: @Gorden_Sun's X.com post (https://x.com/Gorden_Sun/status/1871808558591299801)
+- **Status**: Independent enhancement project with significant new features
+- **Not a fork**: Built from scratch with original code and architecture
+- **100% open source**: All code available under MIT license
+
 ### Trademarks
 **NVIDIA** and **NVIDIA NIM** are trademarks of NVIDIA Corporation. This project is **not officially affiliated with or endorsed by NVIDIA**. All AI models are provided by NVIDIA's platform at [build.nvidia.com](https://build.nvidia.com).
 
+### Copyright & Fair Use
+- This project provides a management interface and proxy layer
+- Does not redistribute or modify NVIDIA's models
+- Uses publicly available APIs according to their terms of service
+- Falls under fair use for educational and research purposes
+- All original code is MIT licensed
+
 ### Copyright Notice
-If any individual or organization believes this project constitutes copyright infringement or conflicts with their interests, please contact us directly via [GitHub Issues](https://github.com/bluehawana/nvidia-nim-swtich-python/issues) and we will address the concern promptly.
+If any individual or organization (including the cc-nim project author) believes this project:
+- Constitutes copyright infringement
+- Conflicts with their interests
+- Requires attribution updates
+- Has licensing concerns
+
+**Please contact us directly** via [GitHub Issues](https://github.com/bluehawana/nvidia-nim-swtich-python/issues) and we will address the concern **promptly and professionally**. We respect intellectual property and community contributions.
 
 ---
 
