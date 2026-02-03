@@ -370,11 +370,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             const data = await response.json();
+            console.log('API Response:', data); // Debug log
             
             // Handle different response types (text or thinking)
             let assistantMessage = 'No response';
             if (data.content && data.content.length > 0) {
                 const content = data.content[0];
+                console.log('Content type:', content.type, 'Content:', content); // Debug log
                 if (content.type === 'text') {
                     assistantMessage = content.text;
                 } else if (content.type === 'thinking') {
