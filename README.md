@@ -13,8 +13,6 @@ Claude Code  ──→  Proxy (localhost:8089)  ──→  NVIDIA NIM
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)]()
 [![License](https://img.shields.io/badge/license-MIT-green)]()
 
-🌐 **[Try Live Demo](https://models.bluehawana.com)**
-
 ---
 
 ## ✨ Features
